@@ -6,52 +6,52 @@ export default {
         return {
             links: [
                 {
-                    text: "character",
+                    text: "CHARACTER",
                     url: "#",
                     current: false,
                 },
                 {
-                    text: "comics",
+                    text: "COMICS",
                     url: "#",
                     current: false,
                 },
                 {
-                    text: "movies",
+                    text: "MOVIES",
                     url: "#",
                     current: false,
                 },
                 {
-                    text: "tv",
+                    text: "TV",
                     url: "#",
                     current: false,
                 },
                 {
-                    text: "games",
+                    text: "GAMES",
                     url: "#",
                     current: false,
                 },
                 {
-                    text: "collectibles",
+                    text: "COLLECTIBLES",
                     url: "#",
                     current: false,
                 },
                 {
-                    text: "videos",
+                    text: "VIDEOS",
                     url: "#",
                     current: false,
                 },
                 {
-                    text: "fans",
+                    text: "FANS",
                     url: "#",
                     current: false,
                 },
                 {
-                    text: "news",
+                    text: "NEWS",
                     url: "#",
                     current: false,
                 },
                 {
-                    text: "shop",
+                    text: "SHOP",
                     url: "#",
                     current: false,
                 },
@@ -61,6 +61,7 @@ export default {
 }
 
 </script>
+
 
 <template>
 
@@ -72,7 +73,7 @@ export default {
 
             <ul>
                 <li v-for="(link, index) in links" :key="index">
-                    <a class="active" href="#">
+                    <a :class="{ active: link.current }" :href="link.url">
                         {{ link.text }}
                     </a>
                 </li>
@@ -82,23 +83,31 @@ export default {
 
 </template>
 
+
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as*;
 
 header {
 
-    height: 150px;
+    height: 120px;
 
     nav {
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
-        max-width: 1000px;
+        max-width: 1200px;
         height: 100%;
+        font-weight: 800;
+        font-size: 12px;
 
         a {
             display: flex;
             align-items: center;
+
+            img {
+                width: 80px;
+                height: 80px;
+            }
         }
     }
 
@@ -111,10 +120,11 @@ ul {
     list-style: none;
 
     li {
-        margin: 0 10px;
+        margin: 0 15px;
 
         a {
             text-decoration: none;
+            color: $secondary;
         }
     }
 
