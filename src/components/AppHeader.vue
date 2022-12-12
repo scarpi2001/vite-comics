@@ -64,13 +64,16 @@ export default {
 
 
 <template>
-
+    <!-- HEADER -->
     <header>
+
+        <!-- header nav -->
         <nav>
             <a href="#">
                 <img src="img/dc-logo.png" alt="Dc Logo">
             </a>
 
+            <!-- lista link -->
             <ul>
                 <li v-for="(link, index) in links" :key="index">
                     <a :class="{ active: link.current }" :href="link.url">

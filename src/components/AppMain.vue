@@ -1,5 +1,4 @@
 <script>
-
 export default {
     name: "AppMain",
 }
@@ -8,9 +7,11 @@ export default {
 
 
 <template>
-
+    <!-- MAIN -->
     <main>
-        <h2>Content goes here</h2>
+        <div class="container">
+            <h2>Content goes here</h2>
+        </div>
     </main>
 
 </template>
