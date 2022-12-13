@@ -1,5 +1,5 @@
 <script>
-import AppMainCard from "./main_components/AppMainCard.vue"
+import AppMainCard from "./AppMainCard.vue"
 
 export default {
     name: "AppMainCardList",
@@ -89,7 +89,7 @@ export default {
 
 
 <template>
-    <AppMainCard />
+    <AppMainCard v-for="(card, index) in cards" :key="index" :details="card" />
 </template>
 
 <style lang=scss scoped>

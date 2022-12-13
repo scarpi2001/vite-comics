@@ -29,7 +29,12 @@ main {
 
     color: $tertiary;
     background-color: $secondary;
-    padding: 50px;
+    padding: 50px 0;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
 }
 </style>
