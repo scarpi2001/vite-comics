@@ -82,6 +82,8 @@ export default {
                 </li>
             </ul>
         </nav>
+
+        <section id="jumbotron"></section>
     </header>
 
 </template>
@@ -92,14 +94,14 @@ export default {
 
 header {
 
-    height: 120px;
+    height: 400px;
 
     nav {
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
         max-width: 1200px;
-        height: 100%;
+        height: 100px;
         font-weight: 600;
         font-size: 12px;
 
@@ -112,31 +114,37 @@ header {
                 height: 80px;
             }
         }
+
+        ul {
+            display: flex;
+            list-style: none;
+
+            li {
+                display: flex;
+                align-items: center;
+                margin: 0 15px;
+                height: 100%;
+
+                a {
+                    height: 100%;
+                    text-decoration: none;
+                    color: $secondary;
+
+                    &:hover {
+                        color: $primary;
+                        border-bottom: solid 3px $primary;
+                    }
+                }
+
+            }
+
+        }
     }
 
-}
-
-ul {
-    display: flex;
-    list-style: none;
-
-    li {
-        display: flex;
-        align-items: center;
-        margin: 0 15px;
-        height: 100%;
-
-        a {
-            height: 100%;
-            text-decoration: none;
-            color: $secondary;
-
-            &:hover {
-                color: $primary;
-                border-bottom: solid 3px $primary;
-            }
-        }
-
+    #jumbotron {
+        height: 300px;
+        background-image: url(img/jumbotron.jpg);
+        background-size: cover;
     }
 
 }

@@ -84,6 +84,7 @@ nav {
                     color: $tertiary;
 
                     img {
+                        object-fit: contain;
                         width: 45px;
                         margin-right: 15px;
                     }

@@ -1,6 +1,11 @@
 <script>
+import AppMainCardList from "./main_components/AppMainCardList.vue"
+
 export default {
     name: "AppMain",
+    components: {
+        AppMainCardList,
+    }
 }
 
 </script>
@@ -10,7 +15,7 @@ export default {
     <!-- MAIN -->
     <main>
         <div class="container">
-            <h2>Content goes here</h2>
+            <AppMainCardList />
         </div>
     </main>
 
