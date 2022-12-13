@@ -100,7 +100,7 @@ header {
         margin: 0 auto;
         max-width: 1200px;
         height: 100%;
-        font-weight: 800;
+        font-weight: 600;
         font-size: 12px;
 
         a {
@@ -117,18 +117,26 @@ header {
 }
 
 ul {
-
     display: flex;
-    align-items: center;
     list-style: none;
 
     li {
+        display: flex;
+        align-items: center;
         margin: 0 15px;
+        height: 100%;
 
         a {
+            height: 100%;
             text-decoration: none;
             color: $secondary;
+
+            &:hover {
+                color: $primary;
+                border-bottom: solid 3px $primary;
+            }
         }
+
     }
 
 }
