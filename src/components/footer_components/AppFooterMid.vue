@@ -179,7 +179,7 @@ section {
         #mid_footer_menu {
             display: flex;
             flex-wrap: wrap;
-            padding: 50px 0;
+            padding: 30px 0;
             height: 250px;
 
             .mid_footer_menu_list {

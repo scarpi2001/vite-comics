@@ -9,6 +9,7 @@ export default {
 
 
 <template>
+    <!-- card -->
     <div class="card">
         <figure>
             <img :src="details.thumb" :alt="details.series">

@@ -18,7 +18,11 @@ export default {
 <template>
 
   <AppHeader />
-  <AppMain />
+
+  <main>
+    <AppMain />
+  </main>
+
   <AppFooter />
 
 </template>
@@ -27,9 +31,4 @@ export default {
 @use "./styles/partials/variables" as*;
 @use "./styles/partials/mixins" as*;
 @use "./styles/general.scss" as*;
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 </style>

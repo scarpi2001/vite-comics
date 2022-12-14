@@ -13,7 +13,7 @@ export default {
                 {
                     text: "COMICS",
                     url: "#",
-                    current: false,
+                    current: true,
                 },
                 {
                     text: "MOVIES",
@@ -147,5 +147,9 @@ header {
         background-size: cover;
     }
 
+    .active {
+        color: $primary;
+        border-bottom: solid 3px $primary;
+    }
 }
 </style>

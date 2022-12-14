@@ -13,11 +13,15 @@ export default {
 
 <template>
     <!-- MAIN -->
-    <main>
+    <section>
+        <!-- container con labels e cards -->
         <div class="container">
+            <span class="label">
+                CURRENT SERIES
+            </span>
             <AppMainCardList />
         </div>
-    </main>
+    </section>
 
 </template>
 
@@ -25,15 +29,18 @@ export default {
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as*;
 
-main {
-
+section {
     color: $tertiary;
     background-color: $secondary;
     padding: 50px 0;
 
-    .container {
-        display: flex;
-        flex-wrap: wrap;
+    .label {
+        padding: 10px 30px;
+        background-color: $primary;
+        position: relative;
+        bottom: 60px;
+        font-size: 24px;
+        font-weight: 800;
     }
 
 }
